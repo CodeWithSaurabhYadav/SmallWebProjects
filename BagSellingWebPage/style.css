@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    border: 0px;
+    color: black;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.header_container {
+    display: block;
+    width: 100%;
+    height: 700px;
+    background-image: url("images/headerbackground.png");
+    background-repeat: no-repeat;
+    background-size: 65.8%;
+    background-position-x: 100%;
+}
+
+.navbar ul {
+    overflow: auto;
+}
+
+.navbar li {
+    float: left;
+    list-style: none;
+    position: relative;
+    transition: all ease-in-out .2s;
+
+}
+
+.navbar li a {
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.outer-nav-elements {
+    display: block;
+    margin: 50px 70px;
+    color: black;
+}
+
+.inner-nav-elements {
+    display: block;
+    margin: 50px 70px;
+    color: white;
+}
+
+#logo-background {
+    width: 200px;
+    height: 200px;
+    padding-top: 60px;
+    background-color: rgb(184, 164, 126);
+    background-repeat: no-repeat;
+    background-position: top;
+    top: -10px;
+    border-radius: 48%;
+    margin-top: -50px;
+    margin-left: 10px;
+}
+
+#logo {
+    width: 200px;
+}
+
+.navbar ul li::after{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 5px;
+    left: 50%;
+    bottom:0;
+    background-color: rgb(184, 164, 126);
+    transition: all ease-in-out .2s;
+}
+.navbar ul li:hover::after{
+    color: rgb(184, 164, 126);
+    width: 100%;
+    left: 0;
+}
+.outer-nav-elements:hover{
+    color: rgb(184, 164, 126);
+}
+.inner-nav-elements:hover {
+    color: rgb(133, 129, 129);
+}
+
+
+.navbar2 {
+    float: left;
+    text-align: center;
+    /* margin-top: 30px; */
+}
+.navbar2 ul li{
+    list-style: none;
+    margin-top: 25px;
+    margin-left: 100px;
+}
+.navbar2 li a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    padding: auto;
+    color: rgb(138, 136, 136,0.8);
+}
+.navbar2 ul li a.active{
+    background: white;
+    padding: 20px;
+    box-shadow: 3px 3px 20px rgba(139, 139, 139,0.15),
+    -3px -3px 20px rgba(139, 139, 139,0.15),
+    -3px 3px 20px rgba(139, 139, 139,0.15),
+    3px -3px 20px rgba(139, 139, 139,0.15);
+    border-radius: 50%;
+    font-size: 35px;
+    color: black;
+    transition-duration: 1s;
+}
+.navbar2 ul li.active{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.navbar2 ul.nav2-ul-1 li button{
+    color: black;
+    background-color: transparent;
+    transform: rotate(90deg);
+    font-size: 30px;
+    margin: none;
+}
+.navbar2 ul.nav2-ul-1 li button.navbar2-arrow-up{
+    color: rgb(184, 164, 126);
+}
+.navbar2 ul.nav2-ul-1 li button.navbar2-arrow-up:hover{
+    color: black;
+}
+.navbar2 ul.nav2-ul-1 li button.navbar2-arrow-down:hover{
+    color: rgb(184, 164, 126);
+}
+.navbar2 ul li a.navbar2-bar{
+    font-size: 50px;
+    font-weight: normal;
+    color: rgb(184, 164, 126);
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.right-overlap{
+    text-align: right;
+    width: 60%;
+    margin-top: 200px;
+}
+.right-overlap h3{
+    font-weight: 600;
+    font-size: 20px;
+    margin-right: 620px;
+    margin-bottom: 20px;
+}
+.right-overlap h1{
+    letter-spacing: 10px;
+    font-weight: bold;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-right: 90px;
+}
+.right-overlap a{
+    text-decoration: none;
+}
+.right-overlap h4{
+    text-align: right;
+    color: rgb(184, 164, 126);
+    margin-right: 550px;
+    font-size: 24px;
+    margin-top: 50px;
+    font-weight: 600;
+}
+.right-overlap a h4:hover{
+    color: rgb(114, 104, 85);
+}
+
+
+
+/* Section 2 */
+.section2{
+    display: flex;
+    width: 100%;
+    height: 600px;
+    background: url("images/Section1Background.png");
+    background-repeat: no-repeat;
+    background-size: 1350px 600px;
+    margin-top: 200px;
+    margin-bottom: 500px;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+.section2 div.voyager{
+    float: right;
+    width: 800px;
+    height: 300px;
+    margin-top: 150px;
+    /* margin-right: 300px; */
+    border: 3px solid rgb(184, 164, 126);
+}
+.section2 div.voyager-text{
+    text-transform: uppercase;
+    width: 800px;
+    height: 300px;
+    margin-top: 150px;
+    margin-left: 450px;
+    text-align: right;
+    margin-right: -300px;
+}
+.section2 div.voyager-text p.voyager-text-text1{
+    margin-top: 100px;
+    font-size: 45px;
+    letter-spacing: 12px;
+    color: white;
+    font-weight: 750;
+    margin-right: 20px;
+}
+.section2 div.voyager-text p.voyager-text-text2{
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: 600;
+}
+.section2 div.voyager p.voyager-text-p1{
+    float: right;
+    width: 400px;
+    font-size: medium;
+    font-weight: 500;
+    word-spacing: 5px;
+    line-height: 40px;
+    margin-top: 40px;
+    margin-right: 30px;
+    color: rgb(143, 140, 140,0.8);
+}
+.section2 div.voyager p.voyager-text-p2{
+    float: right;
+    width: 200px;
+    font-size: 80px;
+    background-color: white;
+    margin-top: 250px;
+    margin-right: -200px;
+    text-align: center;
+}
+
+/* Section3 */
+.section3{
+    margin-top: 200px;
+}
+.section3 div.BagImages1{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+.section3 div.BagImages1 img{
+    display: inline-block;
+    width: 400px;
+    height: 250px;
+    margin: 0px 20px;
+    opacity: 0.6;
+}
+.section3 div.BagImages1 img.image1-active {
+    width: 500px;
+    height: 400px;
+    opacity: 1;
+}
+.section3 div.item1-price{
+    position: absolute;
+    width: 550px;
+    height: 200px;
+    border: 3px solid black;
+    margin-left: 750px;
+    margin-top: 30px;
+}
+.section3 div.item1-price p{
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 15px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.section3 div.item1-price span{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-top: 30px;
+    margin-left: 200px;
+    color: grey;
+}
+.section3 div.item1-price span i{
+    color: grey;
+}
+.section3 div.item1-price span:hover{
+    color: rgb(216, 210, 210);
+}
+.section3 div.item1-price span i:hover{
+    color: rgb(216, 210, 210);
+}
+.section3 div.sliderarrow{
+    display: block;
+    width: 800px;
+    margin: auto;
+    text-align: right;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.section3 div.sliderarrow p,
+.section3 div.sliderarrow button{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 12x;
+    padding: 25px;
+    background: none;
+    cursor: pointer;
+}
+.section3 div.sliderarrow p.active_image_p{
+    background: white;
+    padding: 20px;
+    box-shadow: 3px 3px 20px rgba(139, 139, 139,0.15),
+    -3px -3px 20px rgba(139, 139, 139,0.15),
+    -3px 3px 20px rgba(139, 139, 139,0.15),
+    3px -3px 20px rgba(139, 139, 139,0.15);
+    border-radius: 50%;
+    font-size: 35px;
+    color: black;
+    transition-duration: 1s;
+}
+
+/* Section Container */
+.section-container{
+    display: flex;
+    background-color: rgb(235, 230, 230);
+    height: 700px;
+}
+
+/* Section 4 */
+.section-container div.section4{
+    display: flex;
+    width: 100%;
+    margin-top: 200px;
+    height: 600px;
+    background: url("images/Section2Background.png") no-repeat;
+    background-position-x: 100%;
+    background-size: 1350px 600px;
+    margin-top: 100px;
+}
+.section-container div.section4 div.drifter-text p{
+    text-transform: uppercase;
+}
+.section-container div.section4 div.drifter-text .drifter-text-1{
+    display: block;
+    margin-top: 300px;
+    font-size: 45px;
+    letter-spacing: 12px;
+    color: white;
+    font-weight: 750;
+    margin-left: 700px;
+}
+.section-container div.section4 div.drifter-text .drifter-text-2{
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-left: 800px;
+}
+.section-container div.section4 div.drifter{
+    text-align: left;
+    margin-left: -1250px;
+    width: 1000px;
+    height: 350px;
+    margin-top: 150px;
+    padding: 50px;
+    border: 3px solid rgb(184, 164, 126);
+} 
+.section-container div.section4 div.drifter p.drifter-text-p1{
+    float: left;
+    width: 380px;
+    font-size: medium;
+    font-weight: 500;
+    word-spacing: 5px;
+    line-height: 35px;
+    margin-right: 30px;
+    color: rgb(143, 140, 140,0.8);
+}
+.section-container div.section4 div.drifter p.drifter-text-p2{
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    font-size: 70px;
+    color: red;
+    margin-top: 250px;
+    margin-left: -300px;
+    background-color: rgb(235, 230, 230);
+}

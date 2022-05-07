@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PO8</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px 0px;
+            padding: 0px 0px;
+        }
+        .navbar{
+            margin: 10px 10px;
+            display: flex;
+        }
+        .navbar ul{
+            margin-left: 80%;
+            overflow: hidden;
+        }
+        .navbar ul li{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            float: right;
+        }
+        .navbar img{
+            width: 100px;
+            height: 35px;
+
+        }
+        .navbar ul li a{
+            padding: 5px;
+            text-decoration: none;
+        }
+        li.right-nav{
+            float: right;
+        }
+        li a#home{
+            padding: 5px;
+            background: orange;
+        }
+        li a#home:hover{
+            background: yellow;
+        }
+        .container{
+            display: flex;
+        }
+        .container div{
+            margin-top: 30px;
+            width: 50%;
+        }
+        .left{
+            text-align: center;
+            align-items: center;
+        }
+        .left .left-buttons{
+            margin-top: 10px;
+            width: 80%;
+            display: flex;
+            margin-left: 70px;
+            justify-content: center;
+        }
+        .left img{
+            border: 3px solid rgb(191, 191, 191);
+            padding: 20px;
+            width: 80%;
+        }
+        .left button{
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 2px;
+            width: 100%;
+            padding: 5px;
+            font-size: 15px;
+        }
+        #cart{
+            background: yellow;
+        }
+        #buy{
+            background: red;
+        }
+        button:hover{
+            color: rgb(191, 171, 167);
+        }
+        .right p{
+            margin-top: 30px;
+            text-align: justify;
+            width: 300px;
+        }
+        .more-details{
+            margin-top: 20px;
+        }
+        .more-details div{
+            border: 5px double black;
+            border-collapse: collapse;
+            text-align: left;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="images/goprologo.png" alt="" id="logo">
+        <ul>
+            <li class="right-nav"><a id="home">Home</a></li>
+            <li class="right-nav"><a>About</a></li>
+            <li class="right-nav"><a>Contact</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="left">
+            <img src="images/gopro.jpg" alt="Unable to fetch image">
+            <div class="left-buttons">
+                <button id="cart">Add to cart</button>
+                <button id="buy">Buy now</button>
+            </div>
+        </div>
+        <div class="right">
+            <h3>GoPro Max Rexhargable battery Sports abd action camera (Black)</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis mollitia quod quos incidunt vel! Incidunt libero deleniti, est suscipit sint eaque provident, natus facilis rem enim maiores. Asperiores temporibus magnam atque, in itaque alias velit deserunt sed, ipsa a voluptate nisi nulla voluptatem explicabo praesentium fugit eaque et deleniti assumenda modi, impedit excepturi iusto. Ex dicta, tenetur aliquid nostrum a architecto iste beatae excepturi tempore? Consequuntur eius repudiandae animi dignissimos magni a minima iure quam quidem eveniet, praesentium veritatis perspiciatis dolore numquam aspernatur.
+            </p>
+        </div>
+    </div>
+    <div class="more-details">
+        <div>
+            <h1>Specification</h1>
+        </div>
+        <div>
+            <h4>In the Box</h4>
+            <p>Camera, Charger, Battery, Manual</p>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <td colspan="2"><h3>General</h3></td>
+                </tr>
+                <tr>
+                    <th>Brand</th>
+                    <td>Go Pro</td>
+                </tr>
+                <tr>
+                    <th>Ports</th>
+                    <td>Type C, Type A</td>
+                </tr>
+                <tr>
+                    <th>Display Type</th>
+                    <td>LCD</td>
+                </tr>
+                <tr>
+                    <th>Display Resolution</th>
+                    <td>1080p</td>
+                </tr>
+                <tr>
+                    <th>Battey Type</th>
+                    <td>Rechargable Lithium Ion Battery</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

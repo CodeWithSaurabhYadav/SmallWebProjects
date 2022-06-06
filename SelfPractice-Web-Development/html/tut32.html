@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth child pseudo selectors</title>
+    <style>
+        *{
+            border-radius: 17px;
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            background-color: antiquewhite;
+            padding: 10px 20px;
+            align-items: center;
+            text-align: center;
+        }
+        .container2{
+            background-color: rgb(210, 162, 255);
+            padding: 30px 20px;
+            align-items: center;
+            text-align: center;
+            overflow-x: scroll;
+        }
+        .container2::-webkit-scrollbar{
+            display: none;
+            height: 5px;
+            width: 100%;
+            background: aquamarine;
+        }
+        .container2::-webkit-scrollbar-thumb{
+            background: antiquewhite;
+        }
+        .item{
+            width: 50vw;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 20px auto;
+            font-size: 20px;
+            text-transform: capitalize;
+            font-weight: bold;
+            color: blueviolet;
+            background-color: aliceblue;
+        }
+        .item.item:nth-child(odd){
+            background-color: aquamarine;
+        }
+        .item:hover,
+        .item.item:nth-child(odd):hover
+        {
+            opacity: 0.65;
+        }
+
+
+        table{
+            background-color: aliceblue;
+            overflow-x: scroll;
+            border: none;
+            border-radius: 17px;
+        }
+        
+        table,tr,td,th{
+            align-items: center;
+            justify-content: center;
+            /* border: 2px solid salmon; */
+            border-collapse: collapse;
+            padding: 20px;
+            font-size: large;
+        }
+        table td,th{
+            width: 5rem;
+            border-radius: 0px;
+            /* background-color: aqua; */
+        }
+        table tr:nth-child(even){
+            background-color: aquamarine;
+            width: 3rem;
+            font-size: 1rem;
+            padding: 5px;
+        }
+        table tr:hover{
+            opacity: 0.5;
+        }
+        table th{
+            background-color: black;
+            color: aliceblue;
+        }
+        table th:first-child{
+            border-top-left-radius: 17px;
+        }
+        table th:last-child{
+            border-top-right-radius: 17px;
+        }
+        @media only screen and (max-width: 650px) {
+            .container2::-webkit-scrollbar{
+                display: block;
+            }
+            .item{
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">This is item number 1</div>
+        <div class="item">This is item number 2</div>
+        <div class="item">This is item number 3</div>
+        <div class="item">This is item number 4</div>
+        <div class="item">This is item number 5</div>
+        <div class="item">This is item number 6</div>
+        <div class="item">This is item number 7</div>
+        <div class="item">This is item number 8</div>
+        <div class="item">This is item number 9</div>
+        <div class="item">This is item number 10</div>
+        <div class="item">This is item number 11</div>
+        <div class="item">This is item number 12</div>
+    </div>
+    <div class="container2">
+        <table>
+            <tr>
+                <th>This is a table heading</th>
+                <th>This is a table heading</th>
+                <th>This is a table heading</th>
+                <th>This is a table heading</th>
+                <th>This is a table heading</th>
+                <th>This is a table heading</th>
+                <th>This is a table heading</th>
+                <th>This is a table heading</th>
+                <th>This is a table heading</th>
+            </tr>
+            <tr>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+            </tr>
+            <tr>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+            </tr>
+            <tr>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+            </tr>
+            <tr>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+            </tr>
+            <tr>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+            </tr>
+            <tr>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+            </tr>
+            <tr>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+            </tr>
+            <tr>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+            </tr>
+            <tr>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+            </tr>
+            <tr>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+            </tr>
+            <tr>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+            </tr>
+            <tr>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+            </tr>
+            <tr>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+            </tr>
+            <tr>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+            </tr>
+            <tr>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+            </tr>
+            <tr>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+            </tr>
+            <tr>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+            </tr>
+            <tr>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+                <td>This is table data</td>
+            </tr>
+        </table>
+    </div>
+    <div class="container">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur earum doloribus rem dolorem aut natus ratione possimus ea fuga? Neque et labore incidunt, perferendis inventore quas consectetur velit, officiis quo earum quae nihil placeat veniam molestiae ab esse alias aliquid natus sint rem dignissimos. Sit laborum dolor consequatur? Atque repudiandae autem deserunt maxime ipsam qui, omnis sunt quas inventore dolorem quia, quae placeat similique eos fugiat eligendi laboriosam cum? Perferendis eaque id fugiat at, mollitia nemo voluptatibus. Voluptatibus dolorem asperiores harum cumque corrupti optio vitae iste, quam nobis cupiditate sapiente in provident earum accusamus ex nisi recusandae, dicta, temporibus nemo!</p>
+    </div>
+</body>
+</html>

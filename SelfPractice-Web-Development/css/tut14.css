@@ -1,0 +1,15 @@
+/* ID's */
+#redElement{
+    color: black;
+}
+#greenElement{
+    color: rgb(16, 84, 16);
+}
+#blueElement{
+    color: blue;
+}
+/* Classes's */
+.BlackBackground{
+    background-color: rgba(90, 84, 84, 0.596);
+    border: 4px solid red;
+}

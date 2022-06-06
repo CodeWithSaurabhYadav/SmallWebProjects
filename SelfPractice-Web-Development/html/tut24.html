@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Testing my site</title>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+        *{
+            box-sizing: border-box;
+            font: 500  23px "Great Vibes" , "cursive";
+            margin: 0px 0px;
+            padding: 0px 0px;
+        }
+        body{
+            background: rgba(0, 255, 0, 0.5);
+        }
+        .navbar{
+            display: flex;
+            justify-content: left;
+            background-color: black;
+            height: 50px;
+            align-items: center;
+            /* padding: 10px; */
+        }
+        .navbar ul{
+            overflow: hidden;
+            list-style-type: none;
+        }
+        .navbar ul li{
+            float: left;
+        }
+        .navbar ul li a{
+            display: block;
+            font: 25px 'Times New Roman', Times, sans-serif;
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .navbar ul li a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+        .navbar ul li a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Pictures</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact US</a></li>
+                <li><a href="#">About US</a></li>
+            </ul>
+        </div>
+    </body>
+</html>

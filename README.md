@@ -14,9 +14,11 @@ This repository contains a collection of small web projects, each designed to sh
 
 4. **GymPage**: A web page for a gym or fitness center. Discover how to build a professional-looking website for a business with HTML and CSS.
 
-5. **ValorantGuide**: (New) An exciting project related to Valorant. Explore this project to find out what it's all about.
+5. **ValorantGuide**: An exciting project related to Valorant. Explore this project to find out what it's all about. Its a basic mod for skillcaped.com.
 
-6. **FingerprintScanner**: (New) This project might involve biometric authentication or security concepts. Check it out to learn more about web security and authentication.
+6. **Blog**: (Updated) Share your thoughts, ideas, and expertise with this blog project. Update and customize it to create your own blog platform.
+
+7. **FingerprintScanner**: This project is a simulation of biometric authentication animation. Check it out to learn more about animation..
 
 ## Getting Started
 

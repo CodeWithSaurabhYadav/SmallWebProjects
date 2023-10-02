@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Skill Capped</title>
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/popUp.css">
+</head>
+
+<body>
+
+    <div class="alertPopUp" id="alertPopUp">
+        <div class="alertPopUpContent">
+            <button onclick="alertPopUpHide()" id="closePopUp">&times;</button>
+            <p id="alertPopUpText">Invalid URL!</p>
+        </div>
+    </div>
+
+    <section id="hero">
+        <h1>
+            <label>url</label>
+        </h1>
+        <input onkeyup="if (event.key =='Enter') stream()" id="url"
+            placeholder="https://www.skill-capped.com/xxxxxxx" />
+        <button class="btn btn-three" onclick="stream()">Stream</button>
+        <label id="status"></label>
+    </section>
+
+    <section id="videoSection">
+        <div class="video">
+            <video id="video" poster="assets/thumbnail.jpg" src="blob:https://hls.tvlogy.to/31c0d4da-8912-41bf-9164-e27d95b05ae9" autoplay></video>
+        </div>
+    </section>
+    <!-- FluidPlayer -->
+    <script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
+    <script src="js/video.js"></script>
+    <!-- HLS -->
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+.alertPopUp{
+    display: none;
+    position: absolute;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    background: rgba(255, 255, 255, 0.8);
+    place-content: center;
+    place-items: center;
+}
+.alertPopUpContent{
+    background: var(--primary-color);
+    width: 558px;
+    height: 300px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+#alertPopUpText{
+    padding: 20px;
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-transform: capitalize;
+}
+#closePopUp{
+    position: absolute;
+    border: none;
+    outline: none;
+    top: 10px;
+    right: 10px;
+    font-size: 2.6rem;
+    transition: all 0.3s;
+    background: white;
+    height: 45px;
+    width: 40px;
+    border-radius: 7px;
+}
+#closePopUp:hover{
+    cursor: pointer;
+    transform: scale(1.2, 1.2);
+}
